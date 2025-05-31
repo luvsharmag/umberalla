@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Umbrella</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="umbrella-wrapper">
+          <img
+            src="images/Blue umbrella.png"
+            alt="Umbrella Image"
+            class="umbrella-image"
+          />
+         
+        </div>
+        <img
+          src="images/loader_icon.svg"
+          alt="Loading..."
+          class="loader hidden"
+        />
+      </div>
+      <div class="right">
+        <h1>Custom Umbrella</h1>
+        <div class="color-options">
+          <span class="circle Pink"></span>
+          <span class="circle Blue"></span>
+          <span class="circle Yellow"></span>
+        </div>
+        <h2>Customize your Umbrella</h2>
+        <p>Upload a logo for an instant preview.</p>
+        <p>.png, .avif and .jpg files only. Max file size is 5MB</p>
+        <button class="upload-btn">
+          <img
+            src="images/upload_icon.svg"
+            alt="upload_icon"
+            class="upload-icon visible"
+          />
+           <img
+          src="images/loader_icon.svg"
+          alt="Loading..."
+          class="loaderbtn hidden"
+        />
+        <span class="upload-text">Upload Logo</span>
+         <span class="remove-file hidden">&times;</span>
+          
+        </button>
+      </div>
+    </div>
+    <input
+      type="file"
+      id="logoUpload"
+      accept=".png,.jpg,.jpeg,.avif"
+      style="display: none"
+    />
+
+    <script src="main.js"></script>
+  </body>
+</html>
